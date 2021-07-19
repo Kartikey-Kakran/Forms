@@ -1,0 +1,62 @@
+.box1{
+    text-align: center;
+    color: red;
+}
+
+.contact .con-detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.con-detail input[type=text]{
+    border: none;
+    border-bottom: 2px solid lightblue;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 40px;
+
+}
+.msg{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.msg input[type=text]{
+    border: none;
+    border-bottom: 2px solid lightblue;
+    width: 888px;
+    height: 40px;
+}
+.msg input[type=submit]{
+    border-radius: 10px;
+    width: 104px;
+    font-size: larger;
+    color: yellow;
+    background: transparent;
+    border: 2px solid yellow;
+    transition: background-color 0.2s ease-in-out;
+    
+}
+.msg input[type=submit]:hover{
+    background-color: lightslategrey;
+}
+
+@media(max-width:1220px){
+    .con-detail input[type=text]:nth-child(3){
+        
+        width: 400px;
+        margin-left: -165px;
+        margin-right: 364px;
+    }
+    .msg{
+        flex-direction: column;
+        margin-left: 130px;
+    }
+    .msg input[type=text]{
+        width: 960px;
+        margin-bottom: 25px;
+    }
+}
